@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <!--轮播图-->
+        <com.oragee.banners.BannerView
+            android:layout_marginTop="60dp"
+            android:id="@+id/banner_view"
+            android:background="@color/main_color"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            />
+        <!--开奖记录-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/bg_white"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="双色球 2元赢千万"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="最新开奖"
+                    android:textSize="12sp"
+                    android:gravity="right"
+                    android:textColor="@color/uncheck_text"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_parent"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+                <TextView
+                    android:background="@drawable/shape_bg_red"
+                    android:layout_width="wrap_content"
+                    android:text="更多期次"
+                    android:textSize="12sp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:textColor="@color/bg_white"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#cecece"
+            android:layout_height="1dp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:background="#cecece"
+            android:layout_height="1dp" />
+        <!--公告-->
+        <LinearLayout
+            android:background="@color/bg_white"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="40dp">
+            <ImageView
+                android:src="@mipmap/news"
+                android:layout_width="20dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/tv_news"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/check_text"
+                android:layout_width="wrap_content"
+                android:text="新闻公告公告公告的军事科技发达是咖啡到家咯撒飞洒发生的"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#cecece"
+            android:layout_height="1dp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:background="#cecece"
+            android:layout_height="1dp" />
+        <!--矩形图-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/bg_white"
+            android:layout_height="100dp">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center_horizontal"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="安卓"
+                        android:textColor="@color/black_text"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:text="安卓为墨香而生"
+                        android:textColor="@color/uncheck_text"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="1dp"
+                android:background="#cecece"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="安卓"
+                        android:textColor="@color/black_text"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:text="安卓为墨香而生"
+                        android:textColor="@color/uncheck_text"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="1dp"
+                android:background="#cecece"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="安卓"
+                        android:textColor="@color/black_text"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:text="安卓为墨香而生"
+                        android:textColor="@color/uncheck_text"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#cecece"
+            android:layout_height="1dp" />
+        <!--矩形图-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/bg_white"
+            android:layout_height="100dp">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="安卓"
+                        android:textColor="@color/black_text"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:text="安卓为墨香而生"
+                        android:textColor="@color/uncheck_text"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="1dp"
+                android:background="#cecece"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="安卓"
+                        android:textColor="@color/black_text"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:text="安卓为墨香而生"
+                        android:textColor="@color/uncheck_text"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="1dp"
+                android:background="#cecece"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="安卓"
+                        android:textColor="@color/black_text"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:text="安卓为墨香而生"
+                        android:textColor="@color/uncheck_text"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#cecece"
+            android:layout_height="1dp" />
+        <!--矩形图-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/bg_white"
+            android:layout_height="100dp">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="安卓"
+                        android:textColor="@color/black_text"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:text="安卓为墨香而生"
+                        android:textColor="@color/uncheck_text"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="1dp"
+                android:background="#cecece"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="安卓"
+                        android:textColor="@color/black_text"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:text="安卓为墨香而生"
+                        android:textColor="@color/uncheck_text"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="1dp"
+                android:background="#cecece"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="安卓"
+                        android:textColor="@color/black_text"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:text="安卓为墨香而生"
+                        android:textColor="@color/uncheck_text"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

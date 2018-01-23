@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#cecece"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:paddingTop="15dp"
+        android:elevation="3dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_bg"
+        android:paddingBottom="15dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_suibian"
+            android:layout_width="wrap_content"
+            android:text="随便看看"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="80dp"
+            android:src="@mipmap/logo"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:layout_height="80dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/shape_edt_top"
+            android:layout_height="50dp">
+            <EditText
+                android:id="@+id/edt_username"
+                android:hint="请输入用户名"
+                android:textSize="14sp"
+                android:elevation="2dp"
+                android:background="@drawable/shape_edt_top"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="0.5dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/shape_edt_bottom"
+            android:layout_height="50dp">
+            <EditText
+                android:id="@+id/edt_password"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:elevation="2dp"
+                android:inputType="textPassword"
+                android:hint="请输入密码"
+                android:background="@drawable/shape_edt_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:text="登录"
+            android:background="@drawable/shape_btn"
+            android:textColor="#ffffff"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:text="新用户注册"
+            android:layout_marginTop="20dp"
+            android:paddingRight="30dp"
+            android:layout_gravity="right"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

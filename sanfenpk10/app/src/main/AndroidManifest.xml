@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:overrideLibrary="com.oragee.banners"
+    package="com.xiaohe.ssc_0119">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.xiaohe.ssc_0119.activity.MainActivity"></activity>
+        <activity android:name="com.xiaohe.ssc_0119.BaseActivity" />
+        <activity android:name="com.xiaohe.ssc_0119.BaseWebActivity" />
+        <activity android:name="com.xiaohe.ssc_0119.LaunchActivity" />
+        <activity android:name="com.xiaohe.ssc_0119.FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaohe.ssc_0119.activity.Main2Activity" />
+        <activity android:name="com.xiaohe.ssc_0119.activity.Main3Activity" />
+        <activity android:name="com.xiaohe.ssc_0119.activity.Login1Activity" />
+        <activity android:name="com.xiaohe.ssc_0119.activity.LoopActivity" />
+        <activity android:name="com.xiaohe.ssc_0119.activity.ImageActivity" />
+        <activity android:name="com.xiaohe.ssc_0119.UpdataActivity" />
+        <activity android:name="com.xiaohe.ssc_0119.activity.TestActivity">
+        </activity>
+    </application>
+
+</manifest>

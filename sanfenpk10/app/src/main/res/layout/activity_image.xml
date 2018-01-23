@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.xiaohe.ssc_0119.activity.ImageActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:text="走势图"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/bg_white"
+        android:background="@color/main_color"
+        android:layout_height="50dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_content"
+        android:layout_width="match_parent"
+        android:src="@mipmap/shishikaijiang"
+        android:scaleType="fitXY"
+        android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+</LinearLayout>

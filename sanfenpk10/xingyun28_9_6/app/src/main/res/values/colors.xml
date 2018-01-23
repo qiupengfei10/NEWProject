@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#da3e3f</color>-->
+    <!--<color name="colorPrimaryDark">#da3e3f</color>-->
+    <!--<color name="colorAccent">#da3e3f</color>-->
+    <!--&lt;!&ndash;主色调&ndash;&gt;-->
+    <!--<color name="main_color">#da3e3f</color>-->
+    <!--<color name="bottom_bg">#999999</color>-->
+    <!--<color name="bg_white">#ffffff</color>-->
+    <!--<color name="check_text">#ff5c0c</color>-->
+    <!--<color name="uncheck_text">#999999</color>-->
+
+    <!--<color name="black_text">#000000</color>-->
+
+    <color name="colorPrimary">#0452a1</color>
+    <color name="colorPrimaryDark">#0452a1</color>
+    <color name="colorAccent">#0452a1</color>
+    <!--主色调-->
+    <color name="main_color">#0452a1</color>
+    <color name="bottom_bg">#999999</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="check_text">#ff5c0c</color>
+    <color name="uncheck_text">#999999</color>
+
+    <color name="black_text">#000000</color>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaohe.ssc_0119.activity.Main2Activity">
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_above="@+id/rg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"></FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#cecece"
+        android:layout_above="@+id/rg_bottom"
+        android:layout_height="0.5dp" />
+    <RadioGroup
+        android:id="@+id/rg_bottom"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:paddingBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="55dp">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@drawable/table_text"
+            android:text="首页"
+            android:paddingTop="8dp"
+            android:textSize="12sp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/table_three"
+            android:layout_height="55dp" />
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="热门走势"
+            android:textSize="12sp"
+            android:textColor="@drawable/table_text"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/table_two"
+            android:layout_height="50dp" />
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="日报资讯"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:textColor="@drawable/table_text"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/table_one"
+            android:layout_height="50dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="15dp"
+        android:text="首页"
+        android:layout_alignParentTop="true"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:background="@color/main_color"
+        android:layout_height="60dp" />
+    <TextView
+        android:id="@+id/tv_title2"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="15dp"
+        android:text="日报资讯"
+        android:layout_alignParentTop="true"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:background="@color/main_color"
+        android:layout_height="70dp" />
+</RelativeLayout>
